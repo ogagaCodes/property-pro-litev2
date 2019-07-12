@@ -1,0 +1,345 @@
+
+@media screen and (max-width: 800px) {
+  body {
+    
+    margin: 0;
+  }
+  .user-details, .contactUs, .post, .hr-sm, .footer-container-sm{
+    display:block;
+  }
+  .contactUs-bg, .post-header-bg, .details-header, .view-trending, .hr-bg, .footer-container-bg{
+    display:none;
+  }
+ 
+div.clear{
+  clear: both;
+}
+.header-sm{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  width:100%;
+}
+.welcome{
+  display:flex;
+  width:80%;
+  text-align:center;
+  font-weight:bolder;
+  text-decoration:underline;
+}
+.nav-user-items{
+  display:flex;
+  flex-direction: column;
+  width:60%;
+  z-index: 5;
+  margin:auto 0;
+  display:none;
+  background-color:whitesmoke;
+  position:relative;
+  left:-60%;
+  animation-name: slide;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+@keyframes slide {
+  from {left: -60%;}
+  to {left:0%;} 
+}
+
+.user-box-items{
+  width:100%;
+  padding:0;
+}
+.userClass{
+  display:block;
+  width:60%;
+  background-color:whitesmoke;
+  position:relative;
+  margin:auto 0;
+}
+div.image-container{
+  display:flex;
+  flex-direction: column;
+  background-color:grey;
+  align-items: center;
+  padding:0;
+  width:100%;
+  height: 100%;
+ 
+ 
+  margin-top:1em;
+}
+.user-type, .user-id{
+     text-align: center;
+     margin-bottom:0;
+     background-color: grey;
+     width:100%;
+}
+
+.user-photo{
+ display:flex;
+ align-self: center;
+ width:50%;
+ height:100%;
+ border-radius:50%;
+}
+.upload{
+  display:flex;
+  width:50%;
+  align-self: center;
+  overflow: hidden;
+}
+.nav-items-container{
+  display:flex;
+  flex-direction:row;
+  align-content: center;
+  flex-wrap: wrap;
+
+  width:100%;
+
+
+}
+.logo{
+  display:flex;
+  width:50%;
+  height:100%;
+}
+
+.searchBtn{
+  display:flex;
+  float:right;
+  border:none;
+  width:50%;
+  text-align:center;
+  font-size:100%;
+  background-color: blue;
+  color:whitesmoke;
+  cursor:pointer;
+  border-radius:5px;
+}
+.searchBtn:hover{
+  background-color: green;
+  box-shadow: 2px 2px 2px black;
+}
+.nav-items{
+  display: flex;
+  align-self: center;
+  padding-left:2em;
+  color:white;
+}
+a.nav-link{
+  text-decoration: none;
+  color:white;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  height:100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  border-radius:50%;
+  padding:0;
+  
+}
+.user-box-items, .user-id, .user-type{
+  border: none;
+  width:100%;
+  text-align:center;
+  background-color:grey;
+  border-radius:2px;
+  background-color:grey;
+  color:white;
+  border-bottom:2px solid black;
+}
+button.user-box-items:hover{
+  cursor:pointer;
+}
+
+.user-box-items:hover{
+  background-color:green;
+  box-shadow: 2px 2px 2px black;
+  font-weight:bolder;
+
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  top: 0;
+  width: 50%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+.modalBtn{
+  text-align:center;
+  font-weight:bolder;
+  display:block;
+  margin:0 auto;
+  background-color:black;
+  color:white;
+  border-radius:0.5em;
+  width:50%;
+  height:8%;
+  float:left;
+  cursor: pointer;
+  
+}
+.contactUs{
+  float:left;
+  width:50%;
+  height:8%;
+  background-color: black;
+  color:white;
+  border-radius:0.5em;
+  cursor:pointer;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.modal-body {
+  padding:0;
+  width:auto;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {top: -300px; opacity: 0} 
+  to {top: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+.posts-container{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  flex-wrap: wrap;
+  width:auto;
+  margin-top:0;
+}
+.post{
+  display:flex;
+  align-items:center;
+  width:auto;
+  height:auto;
+  margin:0;
+  padding-left:0.6em;
+}
+.post-header-sm{
+  display:block;
+  text-align:center;
+  text-decoration: blue underline;
+  
+}
+
+.post-image{
+  display:flex;
+  width:100%;
+  height:70%;
+
+}
+.post-container-item{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:0.1em;
+  background-color:lightcyan;
+  padding-left:0.5em;
+  padding-right:0.5em;
+  padding-bottom:0.5em;
+}
+.update, .delete{
+  border:none;
+  padding:0.5em;
+  cursor: pointer;
+  border-radius:0.5em;
+}
+.update:hover{
+  background-color:green;
+  box-shadow: 2px 2px 0px black;
+}
+.delete:hover{
+  background-color:red;
+  box-shadow: 2px 2px 0px black;
+}
+.view-all{
+  display:flex;
+  align-self: center;
+}
+.post-container-item:hover{
+  box-shadow: 4px 4px 4px 4px grey;
+  border-radius:5px;
+}
+.footer-container-sm{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background-color:black;
+  color:white;
+}
+a.home{
+  text-decoration:none;
+  background-color:white;
+  color:black;
+
+
+}
+.link-home{
+  width:20%;
+  background-color:white;
+  color:white;
+  margin-bottom:2em;
+  text-align:center;
+  font-weight:bolder;
+}
+.link-home:hover,
+.home:hover{
+  font-weight:bolder;
+  background-color:lightcoral;
+  border-radius:3px;
+}
+}
